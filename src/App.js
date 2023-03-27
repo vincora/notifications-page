@@ -1,5 +1,6 @@
 
 import './App.scss';
+import Notification from './Notification';
 
 function App() {
   return (
@@ -13,20 +14,7 @@ function App() {
       </header>
       <main>
         <ul className='feed__list'>
-          <li className='feed__list-item'>
-            <article className='notification'>
-              <img src="" alt="" className='notification__avatar'/>
-              <div className="notification__text">
-                <div className="notification__info">
-                  <div className="notification__username"></div>
-                  <div className="notification__action"></div>
-                  <div className="notification__subject"></div>
-                  <div className="notification__flag"></div>
-                </div>
-                <div className="notification__time"></div>
-              </div>
-            </article>
-          </li>
+          <Notification />
         </ul>
       </main>
     </div>
