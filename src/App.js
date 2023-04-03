@@ -1,10 +1,18 @@
-
+import {useState} from 'react';
 import './App.scss';
 import Notification from './Notification';
 import data from './data.json';
 
 
 function App() {
+
+  const [list, setList] = useState(data);
+  const markAllRead = () => {
+    setList(list.map((item) => {
+      item.read = true;
+      return item;
+    }))
+  }
 
   return (
     <div className='feed'>
@@ -13,11 +21,11 @@ function App() {
           <h1 className='feed__title'>Notifications</h1>
           <div className="feed__number">3</div>
         </div>
-        <button className="feed__right feed__button">Mark all as read</button>
+        <button className="feed__right feed__button" onClick={markAllRead}>Mark all as read</button>
       </header>
       <main>
         <ul className='feed__list'>
-          {data.map((item) => (
+          {list.map((item) => (
             <Notification 
             avatar={item.avatar}
             username={item.username}
@@ -27,7 +35,7 @@ function App() {
             img={item.img}
             time={item.time}
             type={item.type}
-            status={item.status}
+            read={item.read}
             />
           ))}
         </ul>

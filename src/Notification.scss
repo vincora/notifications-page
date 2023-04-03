@@ -8,6 +8,13 @@
     background-color: hsl(210, 60%, 98%);
     color:hsl(219, 12%, 42%);
 
+    &_read{
+        background-color: transparent;
+    }
+    &_read &__flag{
+        display: none;
+    }
+
     &__left-wrapper{
         display: flex;
         align-items: top;
@@ -60,6 +67,7 @@
     &__flag{
         color: hsl(1, 90%, 64%);
         font-weight: 800;
+        font-size: 16px;
     }
     &__time{
 
