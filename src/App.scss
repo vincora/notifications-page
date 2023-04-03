@@ -6,10 +6,11 @@ body{
 
 .feed{
     font-size: 16px;
+    
     font-family: 'Plus Jakarta Sans', sans-serif;
     padding: 2em;
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 700px;
     border-radius: 10px;
     box-shadow: 2px 0px 25px 0px rgba(130,130,130,0.1);
     -webkit-box-shadow: 2px 0px 25px 0px rgba(130,130,130,0.1);
@@ -18,11 +19,13 @@ body{
     &__header{
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: end;
+        line-height: 1;
     }
     &__left{
         display: flex;
-        align-items: center;
+        align-items: end;
+        gap: 10px;
     }
     &__right{
 
@@ -33,12 +36,11 @@ body{
         margin: 0;
         padding: 0;
         color:hsl(224, 21%, 14%);
-        padding-right: 10px;
     }
     &__number{
         font-size: 1em;
         font-weight: 800;
-        padding: 1px 8px;
+        padding: 3px 8px;
         border-radius: 5px;
         color: #fff;
         background-color: hsl(219, 85%, 26%);
@@ -48,12 +50,17 @@ body{
         border: none;
         color: hsl(219, 12%, 42%);
         cursor: pointer;
-
+        font-size: 1em;
+        text-align: right;
+        padding: 0;
     }
     &__list{
-
+        display: flex;
+        flex-direction: column;
+        gap:.75em;
+        padding: 0;
+        margin: 0;
+        padding-top: 30px;
     }
-    &__list-item{
 
-    }
 }

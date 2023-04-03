@@ -1,8 +1,11 @@
 
 import './App.scss';
 import Notification from './Notification';
+import data from './data.json';
+
 
 function App() {
+
   return (
     <div className='feed'>
       <header className='feed__header'>
@@ -14,7 +17,19 @@ function App() {
       </header>
       <main>
         <ul className='feed__list'>
-          <Notification />
+          {data.map((item) => (
+            <Notification 
+            avatar={item.avatar}
+            username={item.username}
+            action={item.action}
+            subject={item.subject}
+            message={item.message}
+            img={item.img}
+            time={item.time}
+            type={item.type}
+            status={item.status}
+            />
+          ))}
         </ul>
       </main>
     </div>
