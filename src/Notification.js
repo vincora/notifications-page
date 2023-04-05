@@ -8,7 +8,7 @@ const Notification = ({avatar, username, action, subject, message, img, time, ty
   return (
     <li className={cn('notification', {'notification_read': read})}>
       <div className="notification__left-wrapper">
-        <img src={avatar} alt="" className='notification__avatar'/>
+        <img src={process.env.PUBLIC_URL + avatar} alt="" className='notification__avatar'/>
         <div className="notification__text">
           <div className="notification__info">
             <span className="notification__username"><a href="">{username}</a></span>
