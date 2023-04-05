@@ -53,17 +53,21 @@
     &__username{
         font-weight: 800;
         color: hsl(224, 21%, 14%);
+        &:hover{
+            color:hsl(219, 85%, 26%);
+            cursor: pointer;
+        }
     }
     &__action{
     }
-    &__subject-post{
+    &__subject{
         font-weight: 800;
+        &:hover{
+            color:hsl(219, 85%, 26%);
+            cursor: pointer;
+        }
     }
 
-    &__subject-group{
-        font-weight: 800;
-        color: hsl(219, 85%, 26%);
-    }
     &__flag{
         color: hsl(1, 90%, 64%);
         font-weight: 800;

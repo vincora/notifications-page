@@ -13,14 +13,7 @@ const Notification = ({avatar, username, action, subject, message, img, time, ty
           <div className="notification__info">
             <span className="notification__username">{username}</span>
             <span className="notification__action">{action}</span>
-            {(subject) && (
-              <span className={cn(
-                {"notification__subject-post":(type === "post"),
-                "notification__subject-group":(type === "group")}
-                )}>
-                  {subject}
-              </span>
-            )}
+            <span className="notification__subject">{subject}</span>
             <span className="notification__flag">&#8226;</span>
           </div>
           <div className="notification__time">{time} ago</div>

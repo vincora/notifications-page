@@ -5,7 +5,8 @@
      "subject":"My first tournament today!",
      "time":"1m",
      "type":"post",
-     "read": false
+     "read": false,
+     "key": 1
     },
     {"avatar":"/images/avatar-angela-gray.webp",
     "username":"Angela Gray",
@@ -13,7 +14,8 @@
     "subject":"",
     "time":"5m",
     "type":"follow",
-    "read": false
+    "read": false,
+    "key": 2
     },
     {"avatar":"/images/avatar-jacob-thompson.webp",
     "username":"Jacob Thompson",
@@ -21,7 +23,8 @@
     "subject":"Chess Club",
     "time":"1 day",
     "type":"group",
-    "read": false
+    "read": false,
+    "key": 3
     },
     {"avatar":"/images/avatar-rizky-hasanuddin.webp",
     "username":"Rizky Hasanuddin",
@@ -30,7 +33,8 @@
     "time":"5 days",
     "message":"Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
     "type":"message",
-    "read": true
+    "read": true,
+    "key": 4
     },
     {"avatar":"/images/avatar-kimberly-smith.webp",
     "username":"Kimberly Smith",
@@ -39,7 +43,8 @@
     "time":"1 week",
     "type":"picture",
     "img": "/images/image-chess.webp",
-    "read": true
+    "read": true,
+    "key": 5
     },
     {"avatar":"/images/avatar-nathan-peterson.webp",
     "username":"Nathan Peterson",
@@ -47,7 +52,8 @@
     "subject":"5 end-game strategies to increase your win rate",
     "time":"2 weeks",
     "type":"post",
-    "read": true
+    "read": true,
+    "key": 6
     },
     {"avatar":"/images/avatar-anna-kim.webp",
     "username":"Anna Kim",
@@ -55,6 +61,7 @@
     "subject":"Chess Club",
     "time":"2 weeks",
     "type":"group",
-    "read": true
+    "read": true,
+    "key": 7
     }
 ]
