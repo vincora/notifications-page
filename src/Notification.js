@@ -11,16 +11,16 @@ const Notification = ({avatar, username, action, subject, message, img, time, ty
         <img src={avatar} alt="" className='notification__avatar'/>
         <div className="notification__text">
           <div className="notification__info">
-            <span className="notification__username">{username}</span>
+            <span className="notification__username"><a href="">{username}</a></span>
             <span className="notification__action">{action}</span>
-            <span className="notification__subject">{subject}</span>
+            <span className="notification__subject"><a href="">{subject}</a></span>
             <span className="notification__flag">&#8226;</span>
           </div>
           <div className="notification__time">{time} ago</div>
-          {(type === "message") && (<div className="notification__message">{message}</div>)}
+          {(type === "message") && (<div className="notification__message"><a href="">{message}</a></div>)}
         </div>
       </div>
-      {(type === "picture") && (<div className="notification__img"><img src={img} alt="" /></div>)}
+      {(type === "picture") && (<a href='' className="notification__img"><img src={img} alt="" /></a>)}
     </li>
   )
 }

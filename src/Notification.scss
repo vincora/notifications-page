@@ -34,6 +34,10 @@
         background-color: #fff;
         border: 1px solid hsl(205, 33%, 90%);
         border-radius: 6px;
+        &:hover{
+            background-color: hsl(205, 33%, 90%);
+            cursor: pointer;
+        }
     }
     &__info{
 
